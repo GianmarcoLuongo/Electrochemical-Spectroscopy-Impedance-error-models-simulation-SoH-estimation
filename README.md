@@ -30,8 +30,18 @@ Linux/macOS:
 ```bash
 source venv/bin/activate
 ```
+Una volta creato e attivato il venv è necessario installare le dipendenze. Nell'ipotesi che il file requirements.txt sia presente nella cartella root del progetto si può procedere a installare le dipendenze: 
+
+```bash
+pip install -r requirements.txt
+```
 
 ## Utilizzo
+Una volta terminata l'installazione dei requisiti e l'attivazione del venv, è possibile eseguire gli script del progetto.
+# Generazione dei dataset degradati in qualità 
+Per ogni cartella relativa alla tipologia di errore introdotto è presente un file python.
+
+# Modelli
 
 ## Bibliografia 
 [1] M. Rashid et al., "Dataset for rapid state of health estimation of lithium batteries using EIS and machine learning: Training and validation," Data in Brief, vol. 48, p. 109157, 2023. doi:10.1016/j.dib.2023.109157
