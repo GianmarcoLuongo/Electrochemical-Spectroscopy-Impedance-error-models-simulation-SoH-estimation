@@ -39,8 +39,8 @@ pip install -r requirements.txt
 ## Utilizzo
 Una volta terminata l'installazione dei requisiti e l'attivazione del venv, è possibile eseguire gli script del progetto.
 # Generazione dei dataset degradati in qualità 
-Per ogni cartella relativa alla tipologia di errore introdotto è presente un file python per degradare la qualità delle acquisizioni. 
-La dicitura del file è degrad_*.py 
+Per ogni cartella relativa alla tipologia di errore introdotto è presente un file python **degrad.py** per degradare la qualità delle acquisizioni. 
+Lo script parte dalle misure del dataset 
 # Modelli
 
 ## Bibliografia 
