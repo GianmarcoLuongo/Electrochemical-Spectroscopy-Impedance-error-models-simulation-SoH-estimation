@@ -49,7 +49,8 @@ Per la tecnica relativa all'impiego dell'algoritmo di fitting LinKK, oltre allo 
 
 # Modelli
 I modelli sono addestrati attraverso l'impiego di uno script di addestramento **trainer.sh**. Lo script bash itera sui dataset variati in qualità presenti nella cartella **/dataset**, rilevati automaticamente ed effettua gli addestramenti eseguendo gli script decommentati nella lista dei modelli definita in **trainer.sh** stesso.
-I log degli addestramenti sono memorizzati automaticamente nella cartella **/log**, includendo le metriche per ogni fold e i valori di average e std delle metriche rispetto ai fold.
+I log degli addestramenti sono memorizzati automaticamente nella cartella **/log**, includendo le metriche per ogni fold e i valori di average e standard deviation delle metriche rispetto ai fold.
+I valori di average e standard deviation delle metriche sono memorizzati in un file nominato **metriche_modelli_optimized.csv**, compilato rispetto ai punteggi ottenuti dai modelli rispetto ai vari dataset alterati in qualità.
 
 ## Bibliografia 
 [1] M. Rashid et al., "Dataset for rapid state of health estimation of lithium batteries using EIS and machine learning: Training and validation," Data in Brief, vol. 48, p. 109157, 2023. doi:10.1016/j.dib.2023.109157
