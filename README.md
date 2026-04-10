@@ -39,15 +39,17 @@ pip install -r requirements.txt
 ## Utilizzo
 Una volta terminata l'installazione dei requisiti e l'attivazione del venv, è possibile eseguire gli script del progetto.
 # Generazione dei dataset degradati in qualità 
-In ogni cartella relativa ad una specifica metodologia di introduzione dell'errore, è presente una sottocartella, dalla nomenclatura ** /SoH_regressor_* **, la radice SoH_regressor_ è comune a tutte le sottocartelle delle varie tecniche.
+In ogni cartella relativa ad una specifica metodologia di introduzione dell'errore, è presente una sottocartella, dalla nomenclatura **/SoH_regressor_***, la radice SoH_regressor_ è comune a tutte le sottocartelle delle varie tecniche.
 In tali cartelle, sono presenti gli script relativi all'addestramento e la validazione dei vari modelli impiegati e gli script per generare le variazioni in qualità delle acquisizioni.
-Il dataset originale è il file ** dataset_all.csv **, presente nelle cartelle SoH_regressor_*. 
-Nelle stesse cartelle, per ogni tecnica impiegata, è presente il file ** degrad.py **. Tale script, partendo dal file delle acquisizioni originali genera i dataset degradati in qualità, al variare dell'entità del degrado simulato; questi sono salvati nella cartella ** /dataset **, per ogni tecnica simulata. 
+Il dataset originale è il file **dataset_all.csv**, presente nelle cartelle SoH_regressor_*. 
+Nelle stesse cartelle, per ogni tecnica impiegata, è presente il file **degrad.py**. Tale script, partendo dal file delle acquisizioni originali genera i dataset degradati in qualità, al variare dell'entità del degrado simulato; questi sono salvati nella cartella **/dataset**, per ogni tecnica simulata.
+Nella cartella **/figures** sono generati inoltre gli scatter plot di una o più acquisizioni, fissata una determinata temperatura, che raffigura il confronto tra l'acquisizione originale e la stessa degradata in qualità.
 
-Per la tecnica relativa all'impiego dell'algoritmo di fitting LinKK, oltre allo script di degrado è presente anche uno script ** KK_test.py **, che effettua il fit LinKK sulle misure del dataset delle acquisizioni originali.
+Per la tecnica relativa all'impiego dell'algoritmo di fitting LinKK, oltre allo script di degrado è presente anche uno script **KK_test.py**, che effettua il fit LinKK sulle misure del dataset delle acquisizioni originali.
 
 # Modelli
-I modelli sono addestrati attraverso l'impiego di uno script di addestramento ** trainer.sh **. Lo script bash itera sui dataset variati in qualità presenti nella cartella ** /dataset **, rilevati automaticamente ed effettua gli addestramenti eseguendo gli script decommentati nella lista dei modelli definita in trainer.sh stesso.
+I modelli sono addestrati attraverso l'impiego di uno script di addestramento **trainer.sh**. Lo script bash itera sui dataset variati in qualità presenti nella cartella **/dataset**, rilevati automaticamente ed effettua gli addestramenti eseguendo gli script decommentati nella lista dei modelli definita in **trainer.sh** stesso.
+I log degli addestramenti sono memorizzati automaticamente nella cartella **/log**, includendo le metriche per ogni fold e i valori di average e std delle metriche rispetto ai fold.
 
 ## Bibliografia 
 [1] M. Rashid et al., "Dataset for rapid state of health estimation of lithium batteries using EIS and machine learning: Training and validation," Data in Brief, vol. 48, p. 109157, 2023. doi:10.1016/j.dib.2023.109157
