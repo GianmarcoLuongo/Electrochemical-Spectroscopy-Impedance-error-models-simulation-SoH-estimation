@@ -14,15 +14,22 @@ Questo progetto è un framework realizzato ed impiegato per simulare varie tipol
 Il progetto è stato creato in modo tale da avere un virtual environment locale 'venv' all'interno della cartella radice del progetto.
 
 Per l'installazione, effettuare il download dell'archivio ed estrarlo in una cartella.
-Nella cartella, creare il virtual environment: 
+Nella cartella, root del progetto, creare il virtual environment: 
 
-Windows:
+**Windows / Linux / macOS:**
 
-Linux/MacOs:
-
+```bash
+python -m venv venv
+```
 Attivare il virtual environment:
-
-
+Windows (CMD):
+```bash
+venv\Scripts\activate
+```
+Linux/macOS: 
+```bash
+source venv/bin/activate
+```
 
 ## Utilizzo
 
