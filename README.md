@@ -46,8 +46,8 @@ Nelle stesse cartelle, per ogni tecnica impiegata, è presente il file ** degrad
 
 Per la tecnica relativa all'impiego dell'algoritmo di fitting LinKK, oltre allo script di degrado è presente anche uno script ** KK_test.py **, che effettua il fit LinKK sulle misure del dataset delle acquisizioni originali.
 
-I modelli sono addestrati attraverso l'impiego di uno script di addestramento ** trainer.sh **.
 # Modelli
+I modelli sono addestrati attraverso l'impiego di uno script di addestramento ** trainer.sh **. Lo script bash itera sui dataset variati in qualità presenti nella cartella ** /dataset **, rilevati automaticamente ed effettua gli addestramenti eseguendo gli script decommentati nella lista dei modelli definita in trainer.sh stesso.
 
 ## Bibliografia 
 [1] M. Rashid et al., "Dataset for rapid state of health estimation of lithium batteries using EIS and machine learning: Training and validation," Data in Brief, vol. 48, p. 109157, 2023. doi:10.1016/j.dib.2023.109157
