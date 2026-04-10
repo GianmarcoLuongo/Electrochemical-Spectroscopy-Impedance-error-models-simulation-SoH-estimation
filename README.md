@@ -39,8 +39,14 @@ pip install -r requirements.txt
 ## Utilizzo
 Una volta terminata l'installazione dei requisiti e l'attivazione del venv, è possibile eseguire gli script del progetto.
 # Generazione dei dataset degradati in qualità 
-Per ogni cartella relativa alla tipologia di errore introdotto è presente un file python **degrad.py** per degradare la qualità delle acquisizioni. 
-Lo script parte dalle misure del dataset 
+In ogni cartella relativa ad una specifica metodologia di introduzione dell'errore, è presente una sottocartella, dalla nomenclatura ** /SoH_regressor_* **, la radice SoH_regressor_ è comune a tutte le sottocartelle delle varie tecniche.
+In tali cartelle, sono presenti gli script relativi all'addestramento e la validazione dei vari modelli impiegati e gli script per generare le variazioni in qualità delle acquisizioni.
+Il dataset originale è il file ** dataset_all.csv **, presente nelle cartelle SoH_regressor_*. 
+Nelle stesse cartelle, per ogni tecnica impiegata, è presente il file ** degrad.py **. Tale script, partendo dal file delle acquisizioni originali genera i dataset degradati in qualità, al variare dell'entità del degrado simulato; questi sono salvati nella cartella ** /dataset **, per ogni tecnica simulata. 
+
+Per la tecnica relativa all'impiego dell'algoritmo di fitting LinKK, oltre allo script di degrado è presente anche uno script ** KK_test.py **, che effettua il fit LinKK sulle misure del dataset delle acquisizioni originali.
+
+I modelli sono addestrati attraverso l'impiego di uno script di addestramento ** trainer.sh **.
 # Modelli
 
 ## Bibliografia 
